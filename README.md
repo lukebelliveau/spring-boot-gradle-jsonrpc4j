@@ -1,17 +1,17 @@
-This repository provides a small working example showing the use of Spring Boot and JSON-RPC. As JSON-RPC implementation [jsonrpc4j](https://github.com/briandilley/jsonrpc4j) is used.
+This repository provides a small working example showing the use of Spring Boot (with Gradle) and JSON-RPC. As JSON-RPC implementation [jsonrpc4j](https://github.com/briandilley/jsonrpc4j) is used.
 
-The code is based on the post [Is Java Remote Procedure Call Dead in the REST Age?](https://dzone.com/articles/is-java-remote-procedure-call-dead-in-the-rest-age) written by [Lieven Doclo](https://dzone.com/users/281312/lievendoclo.html).
+This code is forked from [SubOptimal's example](https://github.com/SubOptimal/spring-boot-jsonrpc4j), which does everything this does, just with maven instead of Gradle.
 
 ## build
 
 ```shell
-mvn clean package
+./gradlew clean && ./gradlew build
 ```
 
 ## run the server
 
 ```
-java -jar target/JsonRPC-0.0.1-SNAPSHOT.jar
+./gradlew bootRun
 ```
 
 ## send a JSON RPC request
