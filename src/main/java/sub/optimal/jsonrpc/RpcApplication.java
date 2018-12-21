@@ -1,5 +1,6 @@
 package sub.optimal.jsonrpc;
 
+import com.googlecode.jsonrpc4j.JsonRpcServer;
 import com.googlecode.jsonrpc4j.spring.JsonServiceExporter;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
